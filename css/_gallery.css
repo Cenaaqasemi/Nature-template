@@ -1,0 +1,25 @@
+.gallery-img-container{
+    position: relative;
+    background-color: var(--clr-primary-2);
+}
+.gallery-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--clr-white);
+    font-size: 2rem;
+    opacity: 0;
+    transition: var(--transition);
+}
+.gallery-img{
+    transition: var(--transition);
+    height: 17rem;
+    object-fit: cover;
+}
+.gallery-img-container:hover .gallery-icon{
+    opacity: 1;
+}
+.gallery-img-container:hover .gallery-img{
+    opacity: 0.5;
+}

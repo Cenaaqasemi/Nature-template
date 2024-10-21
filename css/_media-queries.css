@@ -1,0 +1,227 @@
+/*
+================================
+Media-Query Global
+================================
+*/
+@media  screen and(min-width: 800px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    body{
+        font-size: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 1;
+    }
+}
+/*
+===================================
+Media-Query for Hero-section
+===================================
+*/
+@media screen and (min-width: 768px){
+    .hero{
+        background : linear-gradient(rgba(199 ,125 ,255 ,0.7), rgba(0, 0, 0, 0.7)),
+        url('../assets/img/hero.jpg')
+        center/cover no-repeat;
+    }
+    .hero-banner{
+        padding: 0;
+    }
+    .hero-banner p {
+        max-width: 45rem;
+    }
+}
+
+/*
+===================================
+Media-Query For about us Section
+===================================
+*/
+@media screen and (min-width: 992px){
+    .section-center{
+        width: 95vw;
+        max-width: 1170px;
+    }
+}
+@media screen and (min-width: 992px){
+    .about-center{
+        display: flex;
+        justify-content: space-between;
+    }
+    .about-img{
+        margin-bottom: 0;
+    }
+    .about-img, .about-info{
+        flex: 0 0 calc(50% - 2rem);
+        align-self: center;
+    }
+
+}
+@media screen and (min-width: 1170px){
+    .about-img{
+        position: relative;
+    }
+    .about-img::before{
+        content: "";
+        border: 0.5rem  solid var(--clr-primary-2);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        box-sizing: border-box;
+        top: -1rem;
+        right: -1rem;
+        z-index: -1;
+    }
+}
+
+/*
+=====================================
+Media-Query For Services section
+=====================================
+*/
+
+@media screen and (min-width: 576px){
+    .services-center{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    .service{
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+@media screen and (min-width: 992px) {
+    .service {
+        flex: 0 0 calc(33.33% - 1rem);
+    }
+}
+@media screen and (min-width: 1170px){
+    .service{
+        display: flex;
+        text-align: right;
+    }
+    .service-info{
+        padding-right: 0.75rem;
+    }
+    .service-icon{
+        align-self: start;
+    }
+    .service-title{
+        margin-bottom: 0.5rem;
+    }
+}
+/*
+=======================================
+Media-Query For Articles Section
+=======================================
+*/
+@media screen and (min-width: 768px){
+    .articles-center{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .article-card{
+        flex: 0 0 calc(50% - 2rem);
+    }
+}
+@media screen and (min-width: 1170px){
+    .article-card{
+        flex: 0 0 calc(33.33% - 2rem);
+    }
+}
+/*
+=======================================
+Media-Query For Contact Section
+=======================================
+*/
+@media screen and (min-width: 992px){
+    .contact-center{
+        display: flex;
+        gap: 2rem;
+    }
+    .contact-form{
+        align-self: flex-start;
+        flex: 1 1 auto;
+    }
+}
+
+/*
+=======================================
+Media-Query For Gallery Section
+=======================================
+*/
+@media screen and (min-width: 768px){
+    .gallery-center{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery-img-container{
+        flex: 0 0 50%;
+    }
+}
+@media screen and (min-width: 992px){
+    .gallery-img-container{
+        flex: 0 0 25%;
+    }
+}
+/*
+=======================================
+Media-Query For Navbar Section
+=======================================
+*/
+@media screen and (min-width: 992px){
+    .navbar{
+        padding: 1rem 2rem;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .nav-links{
+        height: auto ;
+        display: flex;
+    }
+    .nav-icons{
+        display: flex;
+    }
+    .navbar-center{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-header{
+        padding: 0 0;
+    }
+    .nav-link{
+        padding: 0 0;
+        margin-right: 0.75rem;
+    }
+    .nav-link:hover{
+        padding: 0;
+        color: var(--clr-primary-2);
+        background-color: transparent;
+    }
+    .nav-icon{
+        color: var(--clr-primary-2);
+        font-size: 1.2rem;
+        margin-right: 0.75rem;
+        transition: var(--transition);
+    }
+    .nav-icon:hover{
+        color: var(--clr-primary-3);
+    }
+}
